@@ -1,0 +1,29 @@
+.fieldmain{
+    width: 100%;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: center;
+    color: black;
+    gap:20px
+}
+
+.inpClass{
+    outline: none;
+    width: 300px;
+}
+
+
+.laable{
+    width: 100px;
+}
+
+
+.commonButton{
+    background-color: yellowgreen;
+    width: 150px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    /* font-size: 12px; */
+}

@@ -1,0 +1,18 @@
+.carasoule_main {
+  max-width: 49.99vw;
+
+}
+
+/* .card{
+  max-width: 36rem !important;
+  width: 100% !important;
+} */
+
+.slide > .carousel-indicators {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .slide {
+    width: 250px;
+  }
+}

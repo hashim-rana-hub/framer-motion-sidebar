@@ -1,0 +1,225 @@
+.profile-header {
+  text-align: center;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  /* width: 95vw; */
+  align-items: center;
+}
+.icon {
+  font-size: 30px;
+  float: left;
+}
+.search-container {
+  width: 25%;
+}
+.search-container > input {
+  /* border: none; */
+  outline: none;
+  /* padding: 04px;s */
+  height: auto;
+  border-radius: 10px;
+  margin-top: 2px;
+  width: 80%;
+}
+.header-center {
+  display: flex;
+  /* margin: auto 100px !important; */
+  justify-content: space-around;
+  width: 25%;
+}
+.right-container {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.profile-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 30%;
+}
+.profile-container > img {
+  border-radius: 50%;
+  height: 30px;
+}
+.profile-container > p {
+  margin-bottom: 0px !important;
+  padding-left: 20px;
+  font-weight: 600;
+}
+.right-icons {
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+.centered-icons > svg {
+  font-size: larger !important;
+}
+.necessity {
+  background-color: #e5e6eb;
+  border-radius: 60%;
+  border: none;
+  width: 42px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.necessity > svg {
+  font-size: larger !important;
+}
+.cover-photo {
+  width: 100%;
+  /* height: 400px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+.cover-photo > .cover_img {
+  padding: 0% 20%;
+  width: 100%;
+}
+.cover-photo > .cover_img > img {
+  width: 100%;
+  height: 400px;
+}
+
+.cover-photo > .dp {
+  z-index: 1;
+  position: absolute;
+  top: 46%;
+  border-radius: 50%;
+  border-bottom: 2px solid red;
+}
+.cover-photo > .dp > img {
+  border-radius: 50%;
+  height: 150px;
+  border: 2px solid wheat;
+}
+
+.user-name {
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  top: 75%;
+  line-height: 5px;
+}
+.user-name > a {
+  font-size: 14px;
+  color: rgb(211, 211, 223) !important;
+}
+.link-section {
+  margin-top: 100px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.link-section > .tabs {
+  width: 70%;
+}
+.link-section > .tabs > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.link-section > .tab-buttons {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.link-section > .tab-buttons > Button {
+  /* padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 8px;
+    padding-bottom: 2px; */
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.posts{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50% !important;
+}
+.posts > .postCard{
+  width: 55% !important;
+  margin-top: 25px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+.heart :hover{
+  color: red;
+}
+.heart1 :hover{
+  color: navy;
+}
+
+@media screen and (max-width: 1236px) {
+  .link-section {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .link-section > .tab-buttons > Button {
+    font-weight: 100;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .cover-photo > .cover_img {
+    padding: 0% 5%;
+    width: 100%;
+  }
+  .link-section {
+    margin-top: 70px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 652px) {
+  .search-container > input {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile-header {
+    flex-direction: column-reverse;
+  }
+  .search-container {
+    display: none !important;
+  }
+  .necessity > svg {
+    font-size: small !important;
+  }
+  .header-center {
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .right-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .necessity {
+    width: 20px;
+    height: 25px;
+  }
+}
